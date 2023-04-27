@@ -2,25 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Microverse Feedback Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+    <h1 id="title">Microverse Feedback Form</h1>
+    <p id="description">Your opinion is valuable</p>
+    <main>
+    <form id="survey-form">
+      <label id="name-label">Name<br>
+        <input class="input" id="name" type="text" placeholder="Enter your name" required>
+      </label><br><br>
+      <label id="email-label">E-mail<br>
+        <input class="input" id="email" type="email" placeholder="Enter your e-mail" required>
+      </label><br><br>
+      <label id="number-label">Age<br>
+        <input class="input" id="number" type="number" placeholder="Age" min="18" max="80">
+      </label><br><br>
+      <label id="dropdown-label">What is your level in coding?<br>
+        <select class="input" id="dropdown">
+          <option disabled selected value>Select from the list</option>
+          <option>beginner</option>
+          <option>Intermediate</option>
+          <option>Experienced</option>
+        </select>
+      </label><br><br>
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input name="option" value="sure" type="radio" checked>Sure<br>
+        <input name="option" value="maybe" type="radio">Maybe<br>
+        <input name="option" value="i don't think so" type="radio">I don't think so<br><br>
+        <p>Select the language/s you like to study the most</p>
+        <label>
+          <input type="checkbox" value="html">HTML
+        </label><br>
+        <label>
+          <input type="checkbox" value="css">CSS
+        </label><br>
+        <label>
+          <input type="checkbox" value="javascript">JavaScript
+        </label><br>
+        <label>
+          <input type="checkbox" value="ruby">Ruby
+        </label><br><br>
+        <p>Your opinion is valuable</p>
+        <textarea class="input" placeholder="Enter your comment"></textarea><br><br>
+        <button class="input" id="submit" type="Submit">Submit</button>
+    </form>
+    </main>
     <script  src="js/index.js"></script>
   </body>
 </html>
